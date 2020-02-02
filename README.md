@@ -1,2 +1,0 @@
-# MoneyProgressBar
-Created with CodeSandbox

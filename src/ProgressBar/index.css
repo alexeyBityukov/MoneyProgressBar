@@ -1,0 +1,28 @@
+.progress {
+  position: relative;
+  height: 5px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid red;
+  margin: 10px 0 10px;
+}
+.currentPercent {
+  position: absolute;
+  height: 5px;
+  border-radius: 1px;
+  background: red;
+  width: 30%;
+  z-index: 1;
+}
+
+.preventPercent {
+  position: absolute;
+  height: 5px;
+  border-radius: 1px;
+  background: gray;
+  width: 30%;
+}
+
+.maxPercent {
+  padding-top: 5px;
+}
