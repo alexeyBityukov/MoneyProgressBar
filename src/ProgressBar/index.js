@@ -39,7 +39,7 @@ class ProgressBar extends React.PureComponent {
           </span>
         </div>
         <div className="maxPercent">
-          Max => {maxProgress}% =>
+          Max => {maxProgress}% =>{" "}
           <span
             style={{
               color: maxAbsolute > 0 ? "green" : "red"
