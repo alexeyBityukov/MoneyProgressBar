@@ -6,16 +6,14 @@ import "./styles.css";
 import ProgressBar from "./ProgressBar";
 import TimeStamp from "./TimeStamp";
 
-const currentProgress = 384505.24;
-const maxProgress = 371506.02;
-const preventProgress = 371506.02;
-
-const lastUpdate = (new Date()).toLocaleString('ru-RU', { day: '2-digit',  month: '2-digit', year: '2-digit' });
+const currentProgress = 404141.99;
+const maxProgress = 384505.24;
+const preventProgress = 384505.24;
 
 function App() {
   return (
     <div className="App">
-      <TimeStamp timestamp={lastUpdate} />
+      <TimeStamp />
       <ProgressBar
         currentProgress={currentProgress}
         preventProgress={preventProgress}

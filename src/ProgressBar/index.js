@@ -10,8 +10,9 @@ class ProgressBar extends React.PureComponent {
       preventProgress = 0,
       maxProgress = 0
     } = this.props;
-    const currentPercent = currentProgress / denominator;
-    const preventPercent = preventProgress / denominator;
+    const currentPercent = (currentProgress / denominator).toFixed(6);
+    const preventPercent = (preventProgress / denominator).toFixed(6);
+    const maxPercent = (preventProgress / denominator).toFixed(6);
     const absoluteProgress = (currentProgress - preventProgress).toFixed(2);
     const maxAbsolute = (currentProgress - maxProgress).toFixed(2);
 
@@ -39,7 +40,7 @@ class ProgressBar extends React.PureComponent {
           </span>
         </div>
         <div className="maxPercent">
-          Max => {maxProgress}% =>{" "}
+          Max => {maxPercent}% =>{" "}
           <span
             style={{
               color: maxAbsolute > 0 ? "green" : "red"
