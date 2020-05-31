@@ -6,9 +6,9 @@ import "./styles.css";
 import ProgressBar from "./ProgressBar";
 import TimeStamp from "./TimeStamp";
 
-const currentProgress = 413130.78;
-const maxProgress = 404141.99;
-const preventProgress = 404141.99;
+const currentProgress = 385846.50;
+const maxProgress = 413130.78;
+const preventProgress = 413130.78;
 
 function App() {
   return (
